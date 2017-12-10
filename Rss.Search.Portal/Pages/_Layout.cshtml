@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="~/lib/kendo-ui/styles/2017.3.1026/kendo.common-bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/kendo-ui/styles/2017.3.1026/kendo.bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/css/rss.search.min.css" />
 
     <script src="~/lib/jquery/dist/jquery.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
@@ -30,9 +31,9 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/About">About</a></li>
-                    <li><a asp-page="/Contact">Contact</a></li>
+                    <li><a asp-page="/Index"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a asp-page="/About"><i class="fa fa-cogs"></i> About</a></li>
+                    <li><a asp-page="/Contact"><i class="fa fa-cogs"></i> Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -44,7 +45,7 @@
             <p>&copy; 2017 - Rss Search Engine</p>
         </footer>
     </div>
-
+    <script src="~/js/rss.search.min.js"></script>
 
     @RenderSection("Scripts", required: false)
 </body>
