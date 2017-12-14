@@ -10,4 +10,7 @@
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Rss.Search.DataAccess\Rss.Search.DataAccess.csproj" />
+  </ItemGroup>
 </Project>

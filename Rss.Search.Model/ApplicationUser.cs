@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Microsoft.AspNetCore.Identity;
 
 namespace Rss.Search.Model
 {
-    public class ApplicationUser
+    public class ApplicationUser : IdentityUser<int>
     {
+        public string Firstname { get; set; }
+        public string Lastname { get; set; }
     }
 }

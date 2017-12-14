@@ -16,7 +16,7 @@
 </ItemGroup>
 
 <ItemGroup>
-  <Folder Include="Context\" />
+  <ProjectReference Include="..\Rss.Search.Model\Rss.Search.Model.csproj" />
 </ItemGroup>
 
 </Project>
