@@ -31,7 +31,7 @@ namespace Rss.Search.Portal
                 options.UseSqlServer(Configuration.GetConnectionString("RssSearchConnection")));
 
 
-            services.AddIdentity<ApplicationUser, IdentityRole>()
+            services.AddIdentity<ApplicationUser, IdentityRole<int>>()
                 .AddEntityFrameworkStores<RssSearchDbContext>()
                 .AddDefaultTokenProviders();
 
@@ -65,8 +65,12 @@ namespace Rss.Search.Portal
                 options.SlidingExpiration = true;
             });
 
-            services
-                .AddMvc()
+            services.AddMvc()
+                //.AddRazorPagesOptions(options =>
+                //{
+                //    options.Conventions.AuthorizeFolder("/Account/Manage");
+                //    options.Conventions.AuthorizePage("/Account/Logout");
+                //})
                 .AddJsonOptions(options => options.SerializerSettings.ContractResolver = new DefaultContractResolver());
             services.AddKendo();
         }

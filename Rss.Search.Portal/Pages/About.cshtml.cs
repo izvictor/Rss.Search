@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc.RazorPages;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Rss.Search.Portal.Pages
 {
+    [Authorize]
     public class AboutModel : PageModel
     {
         public string Message { get; set; }
